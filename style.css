@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  background-color: coral;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 30px;
+}
+.button:active{
+  transform: scale(0.95);
+}
+.modal {
+  display: none;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-radius: 5px;
+  animation-name: anime;
+  animation-duration: 1s;
+  box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.3);
+-webkit-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.3);
+-moz-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.3);
+}
+.modal-header {
+  background-color: coral;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  padding: 10px;
+}
+.modal-content > p{
+  font-size: 17px;
+  line-height: 25px;
+  color: #3d3d3d;
+}
+.closeBtn {
+  font-size: 40px;
+  position: absolute;
+  right: 8px;
+  top: -2px;
+  color: #fff;
+  cursor: pointer;
+}
+.modal-footer {
+  background-color: coral;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  color: #fff;
+  font-size: 19px;
+}
+
+@keyframes anime{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
